@@ -1,0 +1,22 @@
+{
+  "name": "qutori",
+  "version": "1.0.0",
+  "description": "qutori restaurant app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyber-Mat/qutori.git"
+  },
+  "author": "cyber-mat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyber-Mat/qutori/issues"
+  },
+  "homepage": "https://github.com/Cyber-Mat/qutori#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
