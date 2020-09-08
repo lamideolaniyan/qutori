@@ -1,0 +1,16 @@
+.header {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  height: 80vh;
+
+  &__text {
+    grid-column: 1/2;
+  }
+
+  &__img {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+  }
+}
