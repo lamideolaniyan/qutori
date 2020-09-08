@@ -20,11 +20,15 @@ body {
 .header {
   display: grid;
   grid-template-columns: 45% 55%;
-  height: 80vh; }
+  height: 90vh;
+  width: 100vw; }
   .header__text {
     grid-column: 1/2; }
   .header__img {
-    background-image: url(../img/hero.jpg);
+    height: 90vh;
+    width: 100%;
+    background: url(../img/hero.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     border-radius: 2px; }
