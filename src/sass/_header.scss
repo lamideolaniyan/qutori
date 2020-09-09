@@ -17,4 +17,19 @@
     background-position: center;
     border-radius: 2px;
   }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 2rem;
+      font-weight: 400;
+      color: $color-grey;
+    }
+    h1 {
+      color: $color-primary;
+    }
+  }
 }
