@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass src/sass/main.scss dist/css/style.css -w",
-    "devserver": "webpack-dev-server --open",
+    "devserver": "webpack-dev-server --open --mode development --config webpack.config.js",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass src/sass/main.scss dist/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dist/css/style.comp.css -o dist/css/style.prefix.css",
