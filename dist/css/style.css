@@ -20,6 +20,10 @@ a:visited,
 a:active {
   text-decoration: none; }
 
+.icon {
+  height: 2rem;
+  width: 2rem; }
+
 .container {
   width: 100vw;
   display: grid;
@@ -27,15 +31,18 @@ a:active {
 
 .header {
   display: grid;
-  grid-template-columns: 44% 50% 6%;
-  height: 100vh;
-  width: 100vw; }
+  grid-template-columns: 40% 53% 6%;
+  height: 90vh;
+  width: 100vw;
+  margin-bottom: 4rem; }
   .header__text {
+    height: 100%;
     grid-column: 1/2;
     align-self: center;
+    padding-top: 16rem;
     display: grid;
     grid-template-columns: 8rem 1fr;
-    grid-template-rows: repeat(2, min-content);
+    grid-template-rows: repeat(2, min-content) 1fr;
     grid-column-gap: 1rem;
     align-items: center; }
     .header__text .line {
@@ -45,7 +52,7 @@ a:active {
       background-color: #3d3d3c; }
     .header__text .content {
       grid-column: 2/-1;
-      grid-row: 2/-1; }
+      grid-row: 2/3; }
     .header__text p {
       grid-column: 2/-1;
       grid-row: 1/2;
@@ -54,19 +61,44 @@ a:active {
       color: #3d3d3c; }
     .header__text h1 {
       color: rgba(9, 9, 51, 0.925);
-      font-size: 4rem;
+      font-family: 'Roboto', sans-serif;
+      font-size: 5rem;
       line-height: 1.2;
-      font-weight: 700;
+      font-weight: 500;
       letter-spacing: 0.1rem;
       margin: 0.7rem 0; }
   .header__btn {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     margin-top: 2rem;
-    padding: 2rem;
-    width: 20rem;
+    padding: 1.5rem 0.5rem 1.5rem 2rem;
+    width: 17rem;
+    text-transform: capitalize;
     font-weight: 400;
     color: #fff;
-    background-color: #ff4800; }
+    background: linear-gradient(to top right, rgba(255, 94, 30, 0.9), rgba(255, 72, 0, 0.9));
+    cursor: pointer;
+    transition: all 0.2s; }
+    .header__btn .icon-arrow {
+      align-self: flex-end;
+      fill: #fff; }
+    .header__btn:hover {
+      background: linear-gradient(to top right, #ff5e1e, #ff4800); }
+    .header__btn:active {
+      transform: translateY(2px); }
+  .header__contact {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    align-self: end;
+    display: flex;
+    align-items: center; }
+    .header__contact .icon-contact {
+      margin-left: 1.5rem;
+      fill: #3d3d3c;
+      cursor: pointer;
+      transition: all 0.2s; }
+      .header__contact .icon-contact:hover {
+        fill: #ff4800; }
   .header__img {
     height: 100%;
     width: 100%;
