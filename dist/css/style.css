@@ -31,7 +31,7 @@ a:active {
 
 .header {
   display: grid;
-  grid-template-columns: 40% 53% 6%;
+  grid-template-columns: 42% 54% 4%;
   height: 90vh;
   width: 100vw;
   margin-bottom: 4rem; }
@@ -60,7 +60,7 @@ a:active {
       font-weight: 400;
       color: #3d3d3c; }
     .header__text h1 {
-      color: rgba(9, 9, 51, 0.925);
+      color: rgba(5, 5, 24, 0.836);
       font-family: 'Roboto', sans-serif;
       font-size: 5rem;
       line-height: 1.2;
@@ -77,6 +77,7 @@ a:active {
     font-weight: 400;
     color: #fff;
     background: linear-gradient(to top right, rgba(255, 94, 30, 0.9), rgba(255, 72, 0, 0.9));
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: all 0.2s; }
     .header__btn .icon-arrow {
@@ -94,7 +95,7 @@ a:active {
     align-items: center; }
     .header__contact .icon-contact {
       margin-left: 1.5rem;
-      fill: #3d3d3c;
+      fill: rgba(5, 5, 24, 0.836);
       cursor: pointer;
       transition: all 0.2s; }
       .header__contact .icon-contact:hover {
@@ -107,3 +108,41 @@ a:active {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 2px; }
+  .header__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .header__slider-pins {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .header__slider-pins .icon-pin {
+        fill: #cccccc;
+        margin-bottom: -0.2rem;
+        transition: all 0.5s; }
+        .header__slider-pins .icon-pin-2 {
+          fill: #ff5e1e;
+          height: 3rem;
+          width: 3rem;
+          margin: -0.6rem; }
+    .header__slider-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-23%); }
+      .header__slider-btn--all {
+        height: 6rem;
+        width: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .header__slider-btn--right {
+        background-color: rgba(5, 5, 24, 0.836); }
+      .header__slider-btn--left {
+        background-color: #fff; }
+      .header__slider-btn .icon-slider-btn {
+        height: 2.5rem;
+        width: 2.5rem; }
+        .header__slider-btn .icon-slider-btn-right {
+          fill: #ff5e1e; }

@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  grid-template-columns: 40% 53% 6%;
+  grid-template-columns: 42% 54% 4%;
   height: 90vh;
   width: 100vw;
   margin-bottom: 4rem;
@@ -64,6 +64,8 @@
       rgba($color-secondary-light, 0.9),
       rgba($color-secondary, 0.9)
     );
+    // border-radius: 1000px;
+    box-shadow: $shadow-light;
     cursor: pointer;
     transition: all 0.2s;
 
@@ -95,7 +97,7 @@
 
     .icon-contact {
       margin-left: 1.5rem;
-      fill: $color-grey;
+      fill: $color-primary;
       cursor: pointer;
       transition: all 0.2s;
 
@@ -114,5 +116,63 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 2px;
+  }
+
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &-pins {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .icon-pin {
+        fill: $color-grey-light;
+        margin-bottom: -0.2rem;
+        transition: all 0.5s;
+
+        &-2 {
+          fill: $color-secondary-light;
+          height: 3rem;
+          width: 3rem;
+          margin: -0.6rem;
+        }
+      }
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-23%);
+
+      &--all {
+        height: 6rem;
+        width: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &--right {
+        background-color: $color-primary;
+      }
+
+      &--left {
+        background-color: #fff;
+      }
+
+      .icon-slider-btn {
+        height: 2.5rem;
+        width: 2.5rem;
+
+        &-right {
+          fill: $color-secondary-light;
+        }
+      }
+    }
   }
 }
