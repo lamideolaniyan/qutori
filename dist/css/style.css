@@ -24,6 +24,27 @@ a:active {
   height: 2rem;
   width: 2rem; }
 
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 1.5rem 0.5rem 1.5rem 2rem;
+  width: 17rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #fff;
+  background: linear-gradient(to top right, rgba(253, 102, 56, 0.9), rgba(255, 72, 0, 0.9));
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.2s; }
+  .btn .icon-arrow {
+    align-self: flex-end;
+    fill: #fff; }
+  .btn:hover {
+    background: linear-gradient(to top right, #fd6638, #ff4800); }
+  .btn:active {
+    transform: translateY(2px); }
+
 .container {
   width: 100vw;
   display: grid;
@@ -67,26 +88,6 @@ a:active {
       font-weight: 500;
       letter-spacing: 0.1rem;
       margin: 0.7rem 0; }
-  .header__btn {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
-    padding: 1.5rem 0.5rem 1.5rem 2rem;
-    width: 17rem;
-    text-transform: capitalize;
-    font-weight: 400;
-    color: #fff;
-    background: linear-gradient(to top right, rgba(255, 94, 30, 0.9), rgba(255, 72, 0, 0.9));
-    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: all 0.2s; }
-    .header__btn .icon-arrow {
-      align-self: flex-end;
-      fill: #fff; }
-    .header__btn:hover {
-      background: linear-gradient(to top right, #ff5e1e, #ff4800); }
-    .header__btn:active {
-      transform: translateY(2px); }
   .header__contact {
     grid-column: 1/-1;
     grid-row: 3/-1;
@@ -122,7 +123,7 @@ a:active {
         margin-bottom: -0.2rem;
         transition: all 0.5s; }
         .header__slider-pins .icon-pin-2 {
-          fill: #ff5e1e;
+          fill: #fd6638;
           height: 3rem;
           width: 3rem;
           margin: -0.6rem; }
@@ -145,27 +146,28 @@ a:active {
         height: 2.5rem;
         width: 2.5rem; }
         .header__slider-btn .icon-slider-btn-right {
-          fill: #ff5e1e; }
+          fill: #fd6638; }
 
 .about {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   margin-top: 1rem;
-  height: 75vh; }
+  height: 85vh; }
   .about__left {
     display: grid;
-    grid-template-rows: 1fr 7rem; }
+    grid-template-rows: 1fr 8rem; }
   .about__right {
     display: grid;
-    grid-template-rows: 7rem 1fr; }
+    grid-template-rows: 8rem 1fr; }
   .about__img {
-    background-image: url(../img/img-01.jpg);
+    background-image: url(../img/img-about.jpg);
     background-size: cover;
     background-position: center; }
   .about__text {
     text-align: right;
     background-color: rgba(5, 5, 24, 0.836);
-    color: #fff; }
+    color: #fff;
+    padding-top: 6rem; }
     .about__text-header {
       display: flex;
       justify-content: flex-end;
@@ -173,7 +175,24 @@ a:active {
       .about__text-header .line {
         width: 8rem;
         height: 0.1rem;
-        background-color: #fff; }
+        background-color: #fff;
+        margin-left: 2rem; }
       .about__text-header h3 {
         text-transform: capitalize;
-        color: #ff4800; }
+        color: #fd6638;
+        font-size: 2.5rem;
+        font-weight: 300; }
+    .about__text-content {
+      padding: 0 10rem 0 8rem;
+      display: flex;
+      flex-direction: column; }
+      .about__text-content h2 {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem; }
+      .about__text-content p {
+        font-size: 1.4rem;
+        margin-bottom: 2rem; }
+    .about__text-btn {
+      align-self: flex-end; }
