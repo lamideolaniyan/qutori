@@ -182,7 +182,7 @@ a:active {
         text-transform: capitalize;
         color: #fd6638;
         font-size: 2.5rem;
-        font-weight: 300; }
+        font-weight: 400; }
     .about__text-content {
       padding: 0 10rem 0 8rem;
       display: flex;
@@ -215,7 +215,7 @@ a:active {
       text-transform: capitalize;
       color: #ff4800;
       font-size: 2.5rem;
-      font-weight: 300; }
+      font-weight: 400; }
   .featured__header--bottom {
     display: flex;
     justify-content: space-between;
