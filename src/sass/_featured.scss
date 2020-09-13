@@ -1,0 +1,60 @@
+.featured {
+  height: 45vh;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  grid-row-gap: 4rem;
+
+  &__header {
+    &--top {
+      display: flex;
+      align-items: center;
+
+      .line {
+        width: 8rem;
+        height: 0.1rem;
+        background-color: $color-grey;
+        margin-right: 2rem;
+      }
+
+      h3 {
+        text-transform: capitalize;
+        color: $color-secondary;
+        font-size: 2.5rem;
+        font-weight: 300;
+      }
+    }
+
+    &--bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10rem;
+
+      h2 {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        color: $color-primary;
+      }
+
+      &-icon {
+        background-color: #000;
+      }
+    }
+  }
+
+  &__content {
+    &-wrapper {
+    }
+
+    &-img {
+      display: block;
+      height: 4rem;
+      width: 4rem;
+    }
+
+    &-caption {
+    }
+  }
+}

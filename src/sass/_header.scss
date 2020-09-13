@@ -48,7 +48,7 @@
       margin: 0.7rem 0;
     }
   }
-  
+
   &__contact {
     grid-column: 1/-1;
     grid-row: 3/-1;
@@ -109,6 +109,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
       transform: translateX(-23%);
 
       &--all {
