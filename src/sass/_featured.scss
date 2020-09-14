@@ -39,7 +39,32 @@
       }
 
       &-icon {
-        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .featured--left {
+          background-color: #eee;
+          padding: 1rem;
+          display: flex;
+          align-items: center;
+
+          & > .icon-arrow {
+            fill: $color-primary;
+          }
+        }
+
+        .featured--right {
+          background-color: $color-primary;
+          padding: 1rem;
+          display: flex;
+          align-items: center;
+
+          & > .icon-arrow {
+            fill: $color-secondary;
+          }
+        }
       }
     }
   }
