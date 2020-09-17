@@ -38,26 +38,12 @@
 
         margin-left: 2rem;
       }
-
-      h3 {
-        text-transform: capitalize;
-        color: $color-secondary-light;
-        font-size: 2.5rem;
-        font-weight: 400;
-      }
     }
 
     &-content {
       padding: 0 10rem 0 8rem;
       display: flex;
       flex-direction: column;
-
-      h2 {
-        text-transform: capitalize;
-        font-weight: 700;
-        font-size: 3.5rem;
-        margin-bottom: 1.5rem;
-      }
 
       p {
         font-size: 1.4rem;
