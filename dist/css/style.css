@@ -180,9 +180,7 @@ a:active {
       margin-right: 2rem; }
     .featured__header--top h3 {
       text-transform: capitalize;
-      color: #ff4800;
-      font-size: 2.5rem;
-      font-weight: 400; }
+      color: #ff4800; }
   .featured__header--bottom {
     display: flex;
     justify-content: space-between;
@@ -190,8 +188,6 @@ a:active {
     padding: 0 10rem; }
     .featured__header--bottom h2 {
       text-transform: capitalize;
-      font-weight: 700;
-      font-size: 3.5rem;
       color: rgba(5, 5, 24, 0.836); }
     .featured__header--bottom-icon {
       display: flex;
@@ -274,7 +270,8 @@ a:active {
   .discover__header {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     .discover__header > .h-small {
       position: relative;
       margin-bottom: 1rem; }
@@ -282,9 +279,9 @@ a:active {
         display: block;
         content: '';
         position: absolute;
-        left: 0;
         bottom: 0;
-        transform: translate(50%, 50%);
+        left: 0;
+        transform: translateX(30%);
         height: 2px;
         width: 5rem;
         background-color: #cccccc; }
