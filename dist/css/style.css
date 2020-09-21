@@ -149,8 +149,6 @@ a:active {
       justify-content: flex-end;
       align-items: center; }
       .about__text-header .line {
-        width: 8rem;
-        height: 0.1rem;
         background-color: #fff;
         margin-left: 2rem; }
     .about__text-content {
@@ -173,11 +171,6 @@ a:active {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem; }
-    .featured__header--top .line {
-      width: 8rem;
-      height: 0.1rem;
-      background-color: #3d3d3c;
-      margin-right: 2rem; }
     .featured__header--top h3 {
       text-transform: capitalize;
       color: #ff4800; }
@@ -267,24 +260,6 @@ a:active {
 .discover {
   margin-top: 1rem;
   height: 85vh; }
-  .discover__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .discover__header > .h-small {
-      position: relative;
-      margin-bottom: 1rem; }
-      .discover__header > .h-small::after {
-        display: block;
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transform: translateX(30%);
-        height: 2px;
-        width: 5rem;
-        background-color: #cccccc; }
   .discover__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -316,6 +291,9 @@ a:active {
   color: rgba(61, 61, 60, 0.7);
   text-transform: capitalize;
   margin-bottom: 1rem; }
+
+.gallery {
+  height: 65vh; }
 
 .icon {
   height: 2rem;
@@ -359,3 +337,36 @@ a:active {
   font-weight: 700;
   font-size: 3.5rem;
   margin-bottom: 1.5rem; }
+
+.line {
+  width: 8rem;
+  height: 0.1rem;
+  background-color: #3d3d3c;
+  margin-right: 2rem; }
+
+.left-header--top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem; }
+
+.left-header--bottom {
+  margin-left: 10rem; }
+
+.center-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .center-header > .h-small {
+    position: relative;
+    margin-bottom: 1rem; }
+    .center-header > .h-small::after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateX(30%);
+      height: 2px;
+      width: 5rem;
+      background-color: #cccccc; }

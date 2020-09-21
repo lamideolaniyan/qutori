@@ -61,3 +61,47 @@
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
 }
+
+.line {
+  width: 8rem;
+  height: 0.1rem;
+  background-color: $color-grey;
+  margin-right: 2rem;
+}
+
+.left-header {
+  &--top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  &--bottom {
+    margin-left: 10rem;
+  }
+}
+
+.center-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & > .h-small {
+    position: relative;
+    margin-bottom: 1rem;
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateX(30%);
+      height: 2px;
+      width: 5rem;
+
+      background-color: $color-grey-light;
+    }
+  }
+}
