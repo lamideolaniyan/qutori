@@ -41,19 +41,130 @@
 
     &-images {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-column-gap: 2rem;
-      grid-row-gap: 2rem;
-      height: 40rem;
+      grid-template-columns: repeat(2, 50%);
+      grid-column-gap: 4rem;
     }
 
-    &-img {
-      .gallery__image {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .gallery-left {
+      height: 45rem;
+    }
+
+    .gallery__image {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+      cursor: pointer;
+    }
+
+    .gallery-right {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+      height: 40rem;
+
+      &__item {
+        height: 12rem;
+        position: relative;
+
+        &:hover {
+          .gallery-right__item-caption {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        &-caption {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+
+          height: 100%;
+          width: 100%;
+          padding-left: 2rem;
+
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.5s;
+          cursor: pointer;
+
+          background-image: linear-gradient(
+            to bottom left,
+            rgba(#333, 0.25),
+            rgba(#333, 0.9)
+          );
+
+          &--text {
+            font-size: 1.3rem;
+            color: #fff;
+            font-weight: 400;
+          }
+        }
       }
     }
   }
 }
+
+.g-btn {
+  padding: 0.25rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    to top right,
+    rgba($color-secondary-light, 0.9),
+    rgba($color-secondary, 0.9)
+  );
+
+  cursor: pointer;
+  transition: all 0.2s;
+
+  .icon-arrow {
+    fill: #fff;
+  }
+
+  &:hover {
+    background: linear-gradient(
+      to top right,
+      rgba($color-secondary-light, 1),
+      rgba($color-secondary, 1)
+    );
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+// //TESTING
+// .test-l {
+//   // background-color: greenyellow;
+//   height: 45rem;
+// }
+
+// .test-r {
+//   // background-color: hotpink;
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   grid-gap: 2rem;
+//   height: 40rem;
+// }
+
+// .test {
+//   height: 12rem;
+// }
+
+// .test-img {
+//   display: block;
+//   height: 100%;
+//   width: 100%;
+//   object-fit: cover;
+
+//   cursor: pointer;
+// }

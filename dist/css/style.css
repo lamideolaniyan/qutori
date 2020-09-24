@@ -323,15 +323,61 @@ a:active {
       width: 100%; }
   .gallery__content-images {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    height: 40rem; }
-  .gallery__content-img .gallery__image {
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 4rem; }
+  .gallery__content .gallery-left {
+    height: 45rem; }
+  .gallery__content .gallery__image {
     display: block;
-    width: 100%;
     height: 100%;
-    object-fit: cover; }
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer; }
+  .gallery__content .gallery-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    height: 40rem; }
+    .gallery__content .gallery-right__item {
+      height: 12rem;
+      position: relative; }
+      .gallery__content .gallery-right__item:hover .gallery-right__item-caption {
+        opacity: 1;
+        visibility: visible; }
+      .gallery__content .gallery-right__item-caption {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        padding-left: 2rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+        cursor: pointer;
+        background-image: linear-gradient(to bottom left, rgba(51, 51, 51, 0.25), rgba(51, 51, 51, 0.9)); }
+        .gallery__content .gallery-right__item-caption--text {
+          font-size: 1.3rem;
+          color: #fff;
+          font-weight: 400; }
+
+.g-btn {
+  padding: 0.25rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top right, rgba(253, 102, 56, 0.9), rgba(255, 72, 0, 0.9));
+  cursor: pointer;
+  transition: all 0.2s; }
+  .g-btn .icon-arrow {
+    fill: #fff; }
+  .g-btn:hover {
+    background: linear-gradient(to top right, #fd6638, #ff4800); }
+  .g-btn:active {
+    transform: translateY(2px); }
 
 .icon {
   height: 2rem;
