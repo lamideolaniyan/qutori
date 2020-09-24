@@ -1,11 +1,13 @@
 .discover {
   margin-top: 1rem;
-  height: 85vh;
+  // height: 85vh;
+  margin-bottom: 8rem;
 
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
     justify-items: stretch;
 
     padding: 0 10rem;

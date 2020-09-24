@@ -2,6 +2,7 @@
   // height: 65vh;
 
   &__header {
+    margin-bottom: 3rem;
   }
 
   &__content {
@@ -11,6 +12,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 2rem;
     }
 
     .gallery-subheading {
@@ -39,7 +41,7 @@
 
     &-images {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-gap: 2rem;
       grid-row-gap: 2rem;
       height: 40rem;
