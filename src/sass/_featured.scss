@@ -1,9 +1,7 @@
 .featured {
-  padding-top: 4rem;
-  height: 100vh;
   display: grid;
   grid-template-rows: 20% 80%;
-  grid-row-gap: 1rem;
+  grid-row-gap: 2rem;
 
   &__header {
     &--top {

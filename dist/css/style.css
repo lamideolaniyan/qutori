@@ -24,14 +24,14 @@ a:active {
 .container {
   width: 100vw;
   display: grid;
-  grid-template-rows: repeat(8, min-content); }
+  grid-template-rows: repeat(8, min-content);
+  grid-row-gap: 8rem; }
 
 .header {
   display: grid;
   grid-template-columns: 42% 54% 4%;
   height: 95vh;
-  width: 100vw;
-  margin-bottom: 4rem; }
+  width: 100vw; }
   .header__text {
     height: 100%;
     grid-column: 1/2;
@@ -46,7 +46,7 @@ a:active {
       grid-column: 1/2;
       width: 8rem;
       height: 0.1rem;
-      background-color: #3d3d3c; }
+      background-color: rgba(61, 61, 60, 0.705); }
     .header__text .content {
       grid-column: 2/-1;
       grid-row: 2/3; }
@@ -55,7 +55,7 @@ a:active {
       grid-row: 1/2;
       font-size: 2rem;
       font-weight: 400;
-      color: #3d3d3c; }
+      color: rgba(61, 61, 60, 0.705); }
     .header__text h1 {
       color: rgba(5, 5, 24, 0.836);
       font-family: 'Roboto', sans-serif;
@@ -128,7 +128,6 @@ a:active {
 .about {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  margin-top: 1rem;
   height: 85vh; }
   .about__left {
     display: grid;
@@ -165,11 +164,9 @@ a:active {
       align-self: flex-end; }
 
 .featured {
-  padding-top: 4rem;
-  height: 100vh;
   display: grid;
   grid-template-rows: 20% 80%;
-  grid-row-gap: 1rem; }
+  grid-row-gap: 2rem; }
   .featured__header--top {
     display: flex;
     align-items: center;
@@ -260,17 +257,14 @@ a:active {
         .featured__content-caption--btn:active {
           transform: translateY(2px); }
 
-.discover {
-  margin-top: 1rem;
-  margin-bottom: 8rem; }
-  .discover__content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 4rem;
-    grid-row-gap: 2rem;
-    justify-items: stretch;
-    padding: 0 10rem;
-    padding-top: 2rem; }
+.discover__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 4rem;
+  grid-row-gap: 2rem;
+  justify-items: stretch;
+  padding: 0 10rem;
+  padding-top: 2rem; }
 
 .menu-item {
   font-size: 1.4rem;
@@ -292,7 +286,7 @@ a:active {
 .menu-detail {
   font-size: 1.2rem;
   font-weight: 300;
-  color: rgba(61, 61, 60, 0.7);
+  color: rgba(61, 61, 60, 0.705);
   text-transform: capitalize;
   margin-bottom: 1rem; }
 
@@ -415,6 +409,59 @@ a:active {
   .see-all-btn:active {
     transform: translateY(2px); }
 
+.review {
+  background-color: rgba(238, 238, 238, 0.5);
+  margin-top: -2rem;
+  padding-top: 2rem; }
+  .review__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+    padding: 2rem 10rem; }
+  .review__card {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-row-gap: 2rem;
+    background-color: #fff;
+    padding: 2rem; }
+    .review__card--image {
+      display: flex;
+      align-items: center; }
+      .review__card--image .customer-img {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 100px;
+        margin-right: 2rem; }
+      .review__card--image .rating-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: #2c3e50; }
+        .review__card--image .rating-icon:not(:last-of-type) {
+          fill: #ff4800; }
+    .review__card--text {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: rgba(5, 5, 24, 0.836); }
+    .review__card--name {
+      position: relative;
+      padding-top: 1rem; }
+      .review__card--name .customer-name {
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        color: #ff4800; }
+      .review__card--name .customer-food {
+        font-size: 1.3rem;
+        color: rgba(61, 61, 60, 0.705); }
+      .review__card--name::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1%;
+        width: 40%;
+        background-color: #cccccc; }
+
 .icon {
   height: 2rem;
   width: 2rem; }
@@ -462,7 +509,7 @@ a:active {
 .line {
   width: 8rem;
   height: 0.1rem;
-  background-color: #3d3d3c;
+  background-color: rgba(61, 61, 60, 0.705);
   margin-right: 2rem; }
 
 .left-header--top {

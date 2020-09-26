@@ -2,4 +2,5 @@
   width: 100vw;
   display: grid;
   grid-template-rows: repeat(8, min-content);
+  grid-row-gap: 8rem;
 }
