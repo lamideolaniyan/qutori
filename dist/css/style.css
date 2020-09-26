@@ -379,6 +379,42 @@ a:active {
   .g-btn:active {
     transform: translateY(2px); }
 
+.see-all-btn {
+  grid-column: 3/4;
+  justify-self: start;
+  align-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  width: 50%;
+  text-transform: capitalize;
+  color: rgba(5, 5, 24, 0.836);
+  font-size: 1.4rem;
+  font-weight: 400;
+  transition: all 0.5s; }
+  .see-all-btn > .icon-arrow {
+    fill: currentColor; }
+  .see-all-btn::after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fd6638;
+    height: 1%;
+    width: 100%;
+    transition: all 0.5s; }
+  .see-all-btn:hover {
+    color: #fff; }
+    .see-all-btn:hover::after {
+      z-index: -1;
+      height: 100%; }
+  .see-all-btn:active {
+    transform: translateY(2px); }
+
 .icon {
   height: 2rem;
   width: 2rem; }

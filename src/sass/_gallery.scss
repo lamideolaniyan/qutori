@@ -142,29 +142,52 @@
   }
 }
 
-// //TESTING
-// .test-l {
-//   // background-color: greenyellow;
-//   height: 45rem;
-// }
+.see-all-btn {
+  grid-column: 3/4;
+  justify-self: start;
+  align-self: end;
 
-// .test-r {
-//   // background-color: hotpink;
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-//   grid-gap: 2rem;
-//   height: 40rem;
-// }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-// .test {
-//   height: 12rem;
-// }
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  width: 50%;
 
-// .test-img {
-//   display: block;
-//   height: 100%;
-//   width: 100%;
-//   object-fit: cover;
+  text-transform: capitalize;
+  color: $color-primary;
+  font-size: 1.4rem;
+  font-weight: 400;
+  transition: all 0.5s;
 
-//   cursor: pointer;
-// }
+  & > .icon-arrow {
+    fill: currentColor;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $color-secondary-light;
+    height: 1%;
+    width: 100%;
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &::after {
+      z-index: -1;
+      height: 100%;
+    }
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
