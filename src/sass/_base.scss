@@ -24,3 +24,8 @@ a:active {
   text-decoration: none;
   cursor: pointer;
 }
+
+::selection {
+  background-color: $color-primary;
+  color: #fff;
+}

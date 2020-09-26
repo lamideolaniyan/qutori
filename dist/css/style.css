@@ -21,6 +21,10 @@ a:active {
   text-decoration: none;
   cursor: pointer; }
 
+::selection {
+  background-color: rgba(5, 5, 24, 0.836);
+  color: #fff; }
+
 .container {
   width: 100vw;
   display: grid;
@@ -182,25 +186,6 @@ a:active {
     .featured__header--bottom h2 {
       text-transform: capitalize;
       color: rgba(5, 5, 24, 0.836); }
-    .featured__header--bottom-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer; }
-      .featured__header--bottom-icon .featured--left {
-        background-color: #eee;
-        padding: 1rem;
-        display: flex;
-        align-items: center; }
-        .featured__header--bottom-icon .featured--left > .icon-arrow {
-          fill: rgba(5, 5, 24, 0.836); }
-      .featured__header--bottom-icon .featured--right {
-        background-color: rgba(5, 5, 24, 0.836);
-        padding: 1rem;
-        display: flex;
-        align-items: center; }
-        .featured__header--bottom-icon .featured--right > .icon-arrow {
-          fill: #ff4800; }
   .featured__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -411,13 +396,16 @@ a:active {
 
 .review {
   background-color: rgba(238, 238, 238, 0.5);
+  padding: 4rem 10rem;
   margin-top: -2rem;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column; }
   .review__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2rem;
-    padding: 2rem 10rem; }
+    padding: 2rem 0; }
   .review__card {
     display: grid;
     grid-template-rows: repeat(3, min-content);
@@ -444,7 +432,8 @@ a:active {
       color: rgba(5, 5, 24, 0.836); }
     .review__card--name {
       position: relative;
-      padding-top: 1rem; }
+      padding-top: 1rem;
+      margin-top: 2rem; }
       .review__card--name .customer-name {
         text-transform: capitalize;
         font-size: 1.6rem;
@@ -459,8 +448,11 @@ a:active {
         top: 0;
         left: 0;
         height: 1%;
-        width: 40%;
+        width: 30%;
         background-color: #cccccc; }
+  .review__slider {
+    align-self: flex-end;
+    margin-top: 2rem; }
 
 .icon {
   height: 2rem;
@@ -538,3 +530,21 @@ a:active {
       height: 2px;
       width: 5rem;
       background-color: #cccccc; }
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+  .slider--left, .slider--right {
+    padding: 1rem;
+    display: flex;
+    align-items: center; }
+  .slider--left {
+    background-color: #eee; }
+    .slider--left > .icon-arrow {
+      fill: rgba(5, 5, 24, 0.836); }
+  .slider--right {
+    background-color: rgba(5, 5, 24, 0.836); }
+    .slider--right > .icon-arrow {
+      fill: #ff4800; }
