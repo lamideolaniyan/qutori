@@ -588,7 +588,7 @@
       <div class="review__content">
         <div class="review__card">
           <figure class="review__card--image">
-            <img src="img/img-about.jpg" alt="person" class="customer-img" />
+            <img src="img/person1.jpg" alt="person" class="customer-img" />
             <svg class="icon rating-icon">
               <use xlink:href="img/sprite.svg#icon-star"></use>
             </svg>
@@ -616,7 +616,7 @@
         </div>
         <div class="review__card">
           <figure class="review__card--image">
-            <img src="img/img-about.jpg" alt="person" class="customer-img" />
+            <img src="img/person2.jpg" alt="person" class="customer-img" />
             <svg class="icon rating-icon">
               <use xlink:href="img/sprite.svg#icon-star"></use>
             </svg>
@@ -644,7 +644,7 @@
         </div>
         <div class="review__card">
           <figure class="review__card--image">
-            <img src="img/img-about.jpg" alt="person" class="customer-img" />
+            <img src="img/person3.jpg" alt="person" class="customer-img" />
             <svg class="icon rating-icon">
               <use xlink:href="img/sprite.svg#icon-star"></use>
             </svg>
@@ -672,7 +672,7 @@
         </div>
         <div class="review__card">
           <figure class="review__card--image">
-            <img src="img/img-about.jpg" alt="person" class="customer-img" />
+            <img src="img/person4.jpg" alt="person" class="customer-img" />
             <svg class="icon rating-icon">
               <use xlink:href="img/sprite.svg#icon-star"></use>
             </svg>
@@ -725,23 +725,49 @@
         </div>
 
         <form action="" class="booking__content">
-          <label for="booking-date">date</label>
-          <input type="date" name="booking-date" id="booking-date" />
+          <div class="booking__date">
+            <label for="booking-date" class="form-label">date</label>
+            <input
+              type="date"
+              name="booking-date"
+              id="booking-date"
+              class="form-input"
+            />
+          </div>
 
-          <label for="booking-time">time</label>
-          <input type="time" name="booking-time" id="booking-time" />
+          <div class="booking__time">
+            <label for="booking-time" class="form-label">time</label>
+            <input
+              type="time"
+              name="booking-time"
+              id="booking-time"
+              class="form-input"
+            />
+          </div>
 
-          <label for="booking-guests">guest</label>
-          <input type="number" name="booking-guests" id="booking-guests" />
+          <div class="booking__guests">
+            <label for="booking-guests" class="form-label">guest</label>
+            <input
+              type="number"
+              name="booking-guests"
+              id="booking-guests"
+              class="form-input"
+            />
+          </div>
 
           <input
             type="email"
             name="booking-email"
             id="booking-email"
             placeholder="Enter your email"
+            class="form-input form-input-long"
           />
 
-          <input type="submit" value="Check availability" />
+          <input
+            type="submit"
+            value="Check availability"
+            class="btn form-btn"
+          />
         </form>
       </section>
       <footer class="footer">FOOTER</footer>

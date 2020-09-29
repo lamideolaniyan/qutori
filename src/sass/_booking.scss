@@ -1,3 +1,56 @@
 .footer-booking {
-  background-color: rgba(#000, 1);
+  background-image: linear-gradient(rgba(#333, 0.5), rgba(#333, 0.5)),
+    url(../img/footer5.jpg);
+  background-position: top;
+  background-size: cover;
+
+  padding-top: 2rem;
+}
+
+.booking {
+  &__content {
+    padding: 1rem 10rem;
+    width: 20rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+  }
+
+  &__date,
+  &__time,
+  &__guests {
+    input,
+    label {
+      display: block;
+    }
+    // margin-bottom: 2rem;
+  }
+}
+
+.form-label {
+  color: #fff;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.form-input {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: transparent;
+  outline: solid 0.5px rgba(#fff, 0.2);
+  padding: 0.5rem;
+
+  height: 3rem;
+  display: block;
+}
+
+.form-input-long {
+  grid-column: 1/3;
+}
+
+.form-btn {
+  grid-column: 1/2;
 }

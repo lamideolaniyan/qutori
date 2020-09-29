@@ -28,9 +28,11 @@
       align-items: center;
 
       .customer-img {
+        display: block;
         height: 6rem;
         width: 6rem;
         border-radius: 100px;
+        object-fit: cover;
 
         margin-right: 2rem;
       }

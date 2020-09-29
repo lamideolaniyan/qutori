@@ -276,7 +276,45 @@ a:active {
   margin-bottom: 1rem; }
 
 .footer-booking {
-  background-color: black; }
+  background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../img/footer5.jpg);
+  background-position: top;
+  background-size: cover;
+  padding-top: 2rem; }
+
+.booking__content {
+  padding: 1rem 10rem;
+  width: 20rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 2rem; }
+
+.booking__date input,
+.booking__date label, .booking__time input,
+.booking__time label, .booking__guests input,
+.booking__guests label {
+  display: block; }
+
+.form-label {
+  color: #fff;
+  font-weight: 300;
+  text-transform: capitalize; }
+
+.form-input {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: transparent;
+  outline: solid 0.5px rgba(255, 255, 255, 0.2);
+  padding: 0.5rem;
+  height: 3rem;
+  display: block; }
+
+.form-input-long {
+  grid-column: 1/3; }
+
+.form-btn {
+  grid-column: 1/2; }
 
 .gallery__header {
   margin-bottom: 3rem; }
@@ -419,9 +457,11 @@ a:active {
       display: flex;
       align-items: center; }
       .review__card--image .customer-img {
+        display: block;
         height: 6rem;
         width: 6rem;
         border-radius: 100px;
+        object-fit: cover;
         margin-right: 2rem; }
       .review__card--image .rating-icon {
         width: 1.5rem;
