@@ -45,6 +45,7 @@
     "@babel/runtime": "^7.11.2",
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
+    "flatpickr": "^4.6.6",
     "regenerator-runtime": "^0.13.7"
   }
 }

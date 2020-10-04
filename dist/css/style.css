@@ -275,51 +275,6 @@ a:active {
   text-transform: capitalize;
   margin-bottom: 1rem; }
 
-.footer-booking {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/footer5.jpg);
-  background-position: top;
-  background-size: cover;
-  padding-top: 2rem; }
-
-.booking__content {
-  padding: 1rem 10rem;
-  width: 20rem;
-  display: grid;
-  grid-template-columns: repeat(3, 12rem);
-  grid-template-rows: repeat(3, min-content);
-  grid-gap: 2rem; }
-
-.booking__date input,
-.booking__date label, .booking__time input,
-.booking__time label, .booking__guests input,
-.booking__guests label {
-  display: block; }
-
-.form-label {
-  color: #fff;
-  font-weight: 300;
-  text-transform: capitalize;
-  margin-bottom: 1.5rem; }
-
-.form-input {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  color: #fff;
-  background-color: transparent;
-  outline: solid 0.5px rgba(255, 255, 255, 0.2);
-  padding: 0.5rem;
-  height: 3rem;
-  width: 100%;
-  display: block; }
-
-.form-input-long {
-  grid-column: 1/4;
-  grid-row: 2/3; }
-
-.form-btn {
-  grid-column: 1/2;
-  grid-row: 3/4; }
-
 .gallery__header {
   margin-bottom: 3rem; }
 

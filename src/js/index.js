@@ -1,3 +1,6 @@
-import hello from './model';
+// import flatpickr from 'flatpickr';
 
-hello();
+// const inputArray = Array.from(document.querySelectorAll('input'));
+// const fp = flatpickr('#testing');
+
+// window.addEventListener('load', fp);

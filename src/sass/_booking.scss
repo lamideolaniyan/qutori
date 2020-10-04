@@ -46,7 +46,6 @@
 
   height: 3rem;
   width: 100%;
-  display: block;
 }
 
 .form-input-long {
@@ -57,4 +56,9 @@
 .form-btn {
   grid-column: 1/2;
   grid-row: 3/4;
+}
+
+.testing {
+  width: 10rem;
+  height: 4rem;
 }
