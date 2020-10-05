@@ -392,7 +392,7 @@
             <img
               src="img/img-about.jpg"
               alt="food plate"
-              class="gallery__image"
+              class="gallery__image gallery__image--large"
             />
             <!-- <a class="btn"
               ><svg class="icon icon-arrow">
@@ -405,9 +405,63 @@
           <div class="gallery-right">
             <figure class="gallery-right__item">
               <img
-                src="img/img-about.jpg"
+                src="img/img-01.jpg"
                 alt="food plate"
-                class="gallery__image"
+                class="gallery__image gallery__image--small"
+              />
+              <figcaption class="gallery-right__item-caption">
+                <span class="gallery-right__item-caption--text">
+                  Lorem ipsum dolor sit
+                </span>
+                <a class="g-btn"
+                  ><svg class="icon icon-arrow">
+                    <use
+                      xlink:href="img/sprite.svg#icon-keyboard_arrow_right"
+                    ></use></svg
+                ></a>
+              </figcaption>
+            </figure>
+            <figure class="gallery-right__item">
+              <img
+                src="img/img-02.jpg"
+                alt="food plate"
+                class="gallery__image gallery__image--small"
+              />
+              <figcaption class="gallery-right__item-caption">
+                <span class="gallery-right__item-caption--text">
+                  Lorem ipsum dolor sit
+                </span>
+                <a class="g-btn"
+                  ><svg class="icon icon-arrow">
+                    <use
+                      xlink:href="img/sprite.svg#icon-keyboard_arrow_right"
+                    ></use></svg
+                ></a>
+              </figcaption>
+            </figure>
+            <figure class="gallery-right__item">
+              <img
+                src="img/img-03.jpg"
+                alt="food plate"
+                class="gallery__image gallery__image--small"
+              />
+              <figcaption class="gallery-right__item-caption">
+                <span class="gallery-right__item-caption--text">
+                  Lorem ipsum dolor sit
+                </span>
+                <a class="g-btn"
+                  ><svg class="icon icon-arrow">
+                    <use
+                      xlink:href="img/sprite.svg#icon-keyboard_arrow_right"
+                    ></use></svg
+                ></a>
+              </figcaption>
+            </figure>
+            <figure class="gallery-right__item">
+              <img
+                src="img/hero.jpg"
+                alt="food plate"
+                class="gallery__image gallery__image--small"
               />
               <figcaption class="gallery-right__item-caption">
                 <span class="gallery-right__item-caption--text">
@@ -425,7 +479,7 @@
               <img
                 src="img/img-about.jpg"
                 alt="food plate"
-                class="gallery__image"
+                class="gallery__image gallery__image--small"
               />
               <figcaption class="gallery-right__item-caption">
                 <span class="gallery-right__item-caption--text">
@@ -443,7 +497,7 @@
               <img
                 src="img/img-about.jpg"
                 alt="food plate"
-                class="gallery__image"
+                class="gallery__image gallery__image--small"
               />
               <figcaption class="gallery-right__item-caption">
                 <span class="gallery-right__item-caption--text">
@@ -461,7 +515,7 @@
               <img
                 src="img/img-about.jpg"
                 alt="food plate"
-                class="gallery__image"
+                class="gallery__image gallery__image--small"
               />
               <figcaption class="gallery-right__item-caption">
                 <span class="gallery-right__item-caption--text">
@@ -479,7 +533,7 @@
               <img
                 src="img/img-about.jpg"
                 alt="food plate"
-                class="gallery__image"
+                class="gallery__image gallery__image--small"
               />
               <figcaption class="gallery-right__item-caption">
                 <span class="gallery-right__item-caption--text">
@@ -497,61 +551,7 @@
               <img
                 src="img/img-about.jpg"
                 alt="food plate"
-                class="gallery__image"
-              />
-              <figcaption class="gallery-right__item-caption">
-                <span class="gallery-right__item-caption--text">
-                  Lorem ipsum dolor sit
-                </span>
-                <a class="g-btn"
-                  ><svg class="icon icon-arrow">
-                    <use
-                      xlink:href="img/sprite.svg#icon-keyboard_arrow_right"
-                    ></use></svg
-                ></a>
-              </figcaption>
-            </figure>
-            <figure class="gallery-right__item">
-              <img
-                src="img/img-about.jpg"
-                alt="food plate"
-                class="gallery__image"
-              />
-              <figcaption class="gallery-right__item-caption">
-                <span class="gallery-right__item-caption--text">
-                  Lorem ipsum dolor sit
-                </span>
-                <a class="g-btn"
-                  ><svg class="icon icon-arrow">
-                    <use
-                      xlink:href="img/sprite.svg#icon-keyboard_arrow_right"
-                    ></use></svg
-                ></a>
-              </figcaption>
-            </figure>
-            <figure class="gallery-right__item">
-              <img
-                src="img/img-about.jpg"
-                alt="food plate"
-                class="gallery__image"
-              />
-              <figcaption class="gallery-right__item-caption">
-                <span class="gallery-right__item-caption--text">
-                  Lorem ipsum dolor sit
-                </span>
-                <a class="g-btn"
-                  ><svg class="icon icon-arrow">
-                    <use
-                      xlink:href="img/sprite.svg#icon-keyboard_arrow_right"
-                    ></use></svg
-                ></a>
-              </figcaption>
-            </figure>
-            <figure class="gallery-right__item">
-              <img
-                src="img/img-about.jpg"
-                alt="food plate"
-                class="gallery__image"
+                class="gallery__image gallery__image--small"
               />
               <figcaption class="gallery-right__item-caption">
                 <span class="gallery-right__item-caption--text">
@@ -726,17 +726,27 @@
 
         <form action="" class="booking__content">
           <div class="booking__date">
-            <label for="booking-date" class="form-label ii">date</label>
+            <label for="booking-date" class="form-label ii">
+              date
+              <svg class="icon icon-arrow icon-arrow-down">
+                <use xlink:href="img/sprite.svg#icon-keyboard_arrow_down"></use>
+              </svg>
+            </label>
             <input
               type="text"
               name="booking-date"
               id="booking-date"
-              class="form-input"
+              class="form-input booking-date"
             />
           </div>
 
           <div class="booking__time">
-            <label for="booking-time" class="form-label">time</label>
+            <label for="booking-time" class="form-label">
+              time
+              <svg class="icon icon-arrow icon-arrow-down">
+                <use xlink:href="img/sprite.svg#icon-keyboard_arrow_down"></use>
+              </svg>
+            </label>
             <input
               type="time"
               name="booking-time"
@@ -746,7 +756,12 @@
           </div>
 
           <div class="booking__guests">
-            <label for="booking-guests" class="form-label">guest</label>
+            <label for="booking-guests" class="form-label">
+              guest
+              <svg class="icon icon-arrow icon-arrow-down">
+                <use xlink:href="img/sprite.svg#icon-keyboard_arrow_down"></use>
+              </svg>
+            </label>
             <input
               type="number"
               name="booking-guests"
@@ -772,9 +787,6 @@
         </form>
       </section>
       <footer class="footer"></footer>
-      <div class="testing">
-        <input id="testing" />
-      </div>
     </section>
   </body>
 </html>

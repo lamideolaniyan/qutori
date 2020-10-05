@@ -189,3 +189,13 @@
     transform: translateY(2px);
   }
 }
+
+@keyframes anime {
+  0% {
+    transform: translateY(-10%);
+  }
+
+  100% {
+    transform: translateY(10%);
+  }
+}

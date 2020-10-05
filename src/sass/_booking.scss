@@ -21,8 +21,7 @@
   &__date,
   &__time,
   &__guests {
-    input,
-    label {
+    input {
       display: block;
     }
     // margin-bottom: 2rem;
@@ -34,6 +33,10 @@
   font-weight: 300;
   text-transform: capitalize;
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
 .form-input {
@@ -41,7 +44,7 @@
   font-weight: 300;
   color: #fff;
   background-color: transparent;
-  outline: solid 0.5px rgba(#fff, 0.2);
+  outline: solid 0.5px rgba(#fff, 0.6);
   padding: 0.5rem;
 
   height: 3rem;
@@ -56,9 +59,4 @@
 .form-btn {
   grid-column: 1/2;
   grid-row: 3/4;
-}
-
-.testing {
-  width: 10rem;
-  height: 4rem;
 }

@@ -289,24 +289,25 @@ a:active {
   grid-template-rows: repeat(3, min-content);
   grid-gap: 2rem; }
 
-.booking__date input,
-.booking__date label, .booking__time input,
-.booking__time label, .booking__guests input,
-.booking__guests label {
+.booking__date input, .booking__time input, .booking__guests input {
   display: block; }
 
 .form-label {
   color: #fff;
   font-weight: 300;
   text-transform: capitalize;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer; }
 
 .form-input {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: #fff;
   background-color: transparent;
-  outline: solid 0.5px rgba(255, 255, 255, 0.2);
+  outline: solid 0.5px rgba(255, 255, 255, 0.6);
   padding: 0.5rem;
   height: 3rem;
   width: 100%; }
@@ -318,10 +319,6 @@ a:active {
 .form-btn {
   grid-column: 1/2;
   grid-row: 3/4; }
-
-.testing {
-  width: 10rem;
-  height: 4rem; }
 
 .gallery__header {
   margin-bottom: 3rem; }
@@ -441,6 +438,12 @@ a:active {
       height: 100%; }
   .see-all-btn:active {
     transform: translateY(2px); }
+
+@keyframes anime {
+  0% {
+    transform: translateY(-10%); }
+  100% {
+    transform: translateY(10%); } }
 
 .review {
   background-color: rgba(238, 238, 238, 0.5);
@@ -602,3 +605,6 @@ a:active {
 .white {
   color: #fff;
   text-transform: none; }
+
+.icon-arrow-down {
+  fill: #fff; }

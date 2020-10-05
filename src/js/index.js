@@ -1,7 +1,6 @@
 import flatpickr from 'flatpickr';
 import '../../node_modules/flatpickr/dist/flatpickr.min.css';
 
-const inputArray = Array.from(document.querySelectorAll('input'));
 const fp = () => {
   const today = new Date();
 
@@ -23,8 +22,19 @@ const fp = () => {
 
 window.addEventListener('load', fp);
 
-/*
 document.querySelector('.ii').addEventListener('click', e => {
-  console.log(e);
-  document.querySelector('#booking-date').click();
-});*/
+  console.log(document.querySelector('.booking-date').classList);
+});
+
+const imgArray = Array.from(
+  document.querySelectorAll('.gallery__image--small')
+);
+
+imgArray.forEach(img => {
+  img.addEventListener('mouseover', e => {
+    const imgSrc = e.target.getAttribute('src');
+    document
+      .querySelector('.gallery__image--large')
+      .setAttribute('src', imgSrc);
+  });
+});
