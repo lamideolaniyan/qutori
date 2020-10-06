@@ -145,3 +145,10 @@
 .icon-arrow-down {
   fill: #fff;
 }
+
+.invalid {
+  outline: 0.5px solid red;
+}
+.valid {
+  outline: 0.5px solid greenyellow;
+}

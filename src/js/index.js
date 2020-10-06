@@ -16,7 +16,6 @@ const fp = () => {
     enableTime: true,
     dateFormat: 'H:i',
     time_24hr: false,
-    defaultHour: today.getHours(),
   });
 };
 

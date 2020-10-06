@@ -1,7 +1,10 @@
 .footer-booking {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-row-gap: 4rem;
   background-image: linear-gradient(rgba(#000, 0.3), rgba(#000, 0.3)),
-    url(../img/footer5.jpg);
-  background-position: top;
+    url(../img/img-01.jpg);
+  background-position: center;
   background-size: cover;
 
   padding-top: 2rem;
@@ -54,6 +57,20 @@
 .form-input-long {
   grid-column: 1/4;
   grid-row: 2/3;
+
+  &::placeholder {
+    color: #fff;
+  }
+
+  &:focus {
+    &:invalid {
+      outline: 0.5px solid red;
+    }
+
+    &:valid {
+      outline: 0.5px solid greenyellow;
+    }
+  }
 }
 
 .form-btn {

@@ -737,6 +737,7 @@
               name="booking-date"
               id="booking-date"
               class="form-input booking-date"
+              required
             />
           </div>
 
@@ -748,10 +749,11 @@
               </svg>
             </label>
             <input
-              type="time"
+              type="text"
               name="booking-time"
               id="booking-time"
               class="form-input"
+              required
             />
           </div>
 
@@ -767,6 +769,7 @@
               name="booking-guests"
               id="booking-guests"
               class="form-input"
+              required
             />
           </div>
 
@@ -776,6 +779,7 @@
             id="booking-email"
             placeholder="Enter your email"
             class="form-input form-input-long"
+            required
           />
 
           <button type="submit" value="Check availability" class="btn form-btn">
@@ -786,7 +790,57 @@
           </button>
         </form>
       </section>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__blur">&nbsp</div>
+        <h2 class="footer__header"><span>the</span> restro</h2>
+        <div class="footer__content">
+          <div class="footer__about">
+            <h3 class="h-small">about us</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              architecto ad deserunt id, nisi possimus animi impedit
+              perferendis.
+            </p>
+          </div>
+          <div class="footer__newsletter">
+            <h3 class="h-small">get news & offers</h3>
+            <form action="" class="footer__newsletter-form">
+              <input
+                type="email"
+                class="newsletter-email"
+                name="newsletter-email"
+                placeholder="Enter your email"
+                required
+              />
+              <button class="newsletter-btn" type="submit">
+                <svg class="icon icon-arrow">
+                  <use
+                    xlink:href="img/sprite.svg#icon-keyboard_arrow_right"
+                  ></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="footer__contact">
+            <h3 class="h-small">contact us</h3>
+            <div class="contact-grid">
+              <p>46, Salako Street<br />Oluyole Estate. Ibadan</p>
+              <p>
+                +234 8130884044 <br />
+                olaniyanolamide@gmail.com
+              </p>
+              <p>
+                Monday - Wednesday <br />
+                7:00AM - 9:00PM
+              </p>
+              <p>
+                Wednesday - Sunday <br />
+                8:00AM - 10:30PM
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
   </body>
 </html>
