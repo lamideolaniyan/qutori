@@ -12,7 +12,8 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.6;
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative; }
 
 a,
 a:link,
@@ -84,10 +85,10 @@ a:active {
   .header__img {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/hero.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     border-radius: 2px; }
   .header__slider {
     display: flex;
@@ -694,3 +695,42 @@ a:active {
 
 .valid {
   outline: 0.5px solid greenyellow; }
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem 8rem;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1); }
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; }
+  .nav__item {
+    text-transform: capitalize;
+    margin-right: 2rem;
+    font-size: 1.4rem;
+    font-weight: 400; }
+  .nav__link {
+    position: relative;
+    color: rgba(5, 5, 24, 0.836);
+    padding-bottom: 0.8rem; }
+    .nav__link::after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 0.5rem;
+      width: 0.5rem;
+      border-radius: 100%;
+      background-color: #ff4800;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s; }
+    .nav__link:hover::after {
+      opacity: 1;
+      visibility: visible; }

@@ -71,11 +71,11 @@
   &__img {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(#fff, 0.2), rgba(#fff, 0.2)),
+    background-image: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.5)),
       url(../img/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     border-radius: 2px;
   }
 
