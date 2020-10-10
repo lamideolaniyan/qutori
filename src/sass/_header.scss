@@ -71,7 +71,7 @@
   &__img {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.5)),
+    background-image: linear-gradient(rgba(#fff, 0.1), rgba(#fff, 0.1)),
       url(../img/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,6 +84,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    &-hbg {
+      visibility: hidden;
+      opacity: 0;
+    }
 
     &-pins {
       display: flex;
