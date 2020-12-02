@@ -703,7 +703,11 @@ a:active {
   top: 0;
   right: 0;
   padding: 1rem 8rem;
+  width: 57.5%;
   z-index: 1000;
+  background-color: rgba(238, 238, 238, 0.5);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1); }
   .nav__list {
     display: flex;
@@ -713,14 +717,14 @@ a:active {
     text-transform: capitalize;
     margin-right: 2rem;
     font-size: 1.4rem;
-    font-weight: 400; }
+    font-weight: 700; }
   .nav__link {
     position: relative;
     color: rgba(5, 5, 24, 0.836);
     padding-bottom: 0.8rem; }
     .nav__link::after {
       display: block;
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 50%;
